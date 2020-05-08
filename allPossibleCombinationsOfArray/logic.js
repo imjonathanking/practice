@@ -8,4 +8,4 @@ const testArray = ['first', 'second', 'third'];
 const allCombinations = findAllCombinations(testArray);
 
 // Console log output
-console.log(allCombinations);
+// console.log(allCombinations);
