@@ -18,12 +18,11 @@ let fn = (n, sourceArray, got, all) => {
         return;
     }
     for (let j = 0; j < sourceArray.length; j++) {
-        let thisItem = [sourceArray[j]];
-        fn(n - 1, sourceArray.slice(j + 1), got.concat(thisItem), all);
+        fn(n - 1, sourceArray.slice(j + 1), got.concat([sourceArray[j]]), all);
     }
     return;
 }
 
-const input = ['first', 'second', 'third', 'fourth'];
+const input = ['this', 'is', 'a', 'longer', 'test']
 
 console.log(combine(input))
