@@ -1,11 +1,17 @@
 // Find all combinations of an array
 const findAllCombinations = (input) => {
     let output = [];
+    let alreadyCompared = [];
 
-    for(i = 0; i < input.length; i++){
-        thisItem = input[i];
-        
-    }
+    input.forEach(item => {
+        let thisValue = item;
+
+        // Push this value to array of values that have already been compared
+        alreadyCompared.push(thisValue);
+        console.log({ alreadyCompared })
+
+        console.log({ thisValue });
+    })
 
     console.log('Input array after function.  Testing for mutation: ');
     console.log(input);
@@ -13,11 +19,10 @@ const findAllCombinations = (input) => {
     return output;
 }
 
-const compare = (input) => {
-    console.log('Inside compare()');
+// Used to compare 
+const compareAgainst = (thisItem, arr) => {
+    return 'test';
 }
 
-const inputArr = ['first', 'second', 'third', 'fourth'];
-
-const output = findAllCombinations(inputArr);
+const output = findAllCombinations(['first', 'second', 'third', 'fourth']);
 console.log(output);

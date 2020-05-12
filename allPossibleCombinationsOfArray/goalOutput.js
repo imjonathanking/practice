@@ -2,25 +2,15 @@ const input = ['first', 'second', 'third'];
 
 let goalOutput = [
     {
-        removed: 0,
-        combinations: [
-            ['first', 'second', 'third']
-        ]
+        length: 3,
+        combinations: ['first', 'second', 'third']
     },
     {
-        removed: 1,
+        length: 2,
         combinations: [
-            ['second', 'third'],
-            ['first', 'third'],
-            ['first', 'second']
-        ]
-    },
-    {
-        removed: 2,
-        combinations: [
-            ['first'],
-            ['second'],
-            ['third']
+            ['first', 'second'],
+            ['frst', 'third'],
+            ['second', 'third']
         ]
     }
 ]
